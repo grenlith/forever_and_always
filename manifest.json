@@ -1,0 +1,23 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "forever and always,",
+    "description": "adding a 'baby' nametag to supported entities keeps them babies forever.",
+    "version": [0, 0, 1],
+    "min_engine_version": [1, 20, 10],
+    "uuid": "86a220a2-5eb6-473c-b786-b8665dc02adc"
+  },
+  "modules": [
+  {
+    "description": "adding a 'baby' nametag to supported entities keeps them babies forecer.",
+    "type": "data",
+    "uuid": "e7a95e1d-cf17-4bf7-8456-d67f41ed4621",
+    "version": [0, 0, 1]
+  }
+  ],
+  "metadata": {
+        "authors": ["grenlith"],
+        "license": "MIT",
+        "url": "https://nop.codes"
+    }
+}
