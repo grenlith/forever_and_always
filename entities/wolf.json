@@ -79,7 +79,6 @@
           "speed_multiplier": 1.25
         }
       },
-
       "minecraft:wolf_adult": {
         "minecraft:experience_reward": {
           "on_bred": "Math.Random(1,7)",

@@ -36,6 +36,11 @@
           "grow_up": {}
         }
       },
+      "defanged": {
+        "minecraft:behavior.nearest_attackable_target": {},
+        "minecraft:behavior.ocelotattack": {},
+        "minecraft:attack": {}
+      },
       "minecraft:cat_adult": {
         "minecraft:experience_reward": {
           "on_bred": "Math.Random(1,7)",
@@ -433,7 +438,7 @@
     "events": {
       "minecraft:restart_aging": {
         "remove": {
-          "component_groups": ["minecraft:cat_baby_forever"]
+          "component_groups": ["minecraft:cat_baby_forever", "defanged"]
         },
         "add": {
           "component_groups": ["minecraft:cat_baby"]
@@ -444,7 +449,7 @@
           "component_groups": ["minecraft:cat_baby"]
         },
         "add": {
-          "component_groups": ["minecraft:cat_baby_forever"]
+          "component_groups": ["minecraft:cat_baby_forever", "defanged"]
         }
       },
       "minecraft:entity_spawned": {
