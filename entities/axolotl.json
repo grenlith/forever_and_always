@@ -74,6 +74,34 @@
           "speed_multiplier": 1.1
         }
       },
+      "defanged": {
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 3,
+          "must_see": true,
+          "reselect_targets": true,
+          "within_radius": 5.0,
+          "must_see_forget_duration": 17.0,
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "in_water", "subject": "other", "value": true },
+                  {
+                    "any_of": [
+                      { "test": "is_family", "subject": "other", "value": "drowned" },
+                      { "test": "is_family", "subject": "other", "value": "guardian" },
+                      { "test": "is_family", "subject": "other", "value": "guardian_elder" }
+                    ]
+                  }
+                ]
+              },
+              "max_dist": 8
+            }
+          ]
+        },
+        "minecraft:behavior.melee_box_attack": {},
+        "minecraft:attack": {}
+      },
       "axolotl_adult": {
         "minecraft:experience_reward": {
           "on_bred": "Math.Random(1,7)",
@@ -350,7 +378,7 @@
     "events": {
       "minecraft:restart_aging": {
         "remove": {
-          "component_groups": ["axolotl_baby_forever"]
+          "component_groups": ["axolotl_baby_forever", "defanged"]
         },
         "add": {
           "component_groups": ["axolotl_baby"]
@@ -361,7 +389,7 @@
           "component_groups": ["axolotl_baby"]
         },
         "add": {
-          "component_groups": ["axolotl_baby_forever"]
+          "component_groups": ["axolotl_baby_forever", "defanged"]
         }
       },
       "minecraft:entity_spawned": {
