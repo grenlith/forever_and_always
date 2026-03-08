@@ -1,3 +1,5 @@
+⚠️ This project is deprecated, [Mojang are adding the feature to the base game.](https://www.minecraft.net/en-us/article/our-cutest-drop-ever-has-a-name)
+
 # forever and always,
 ## my baby you'll be
 
